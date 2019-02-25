@@ -4,7 +4,7 @@
 <ul class="images">
     {% for i in images %}
     <li class="image_c">
-        <img class="image" src="{{ url_for('static', filename='uploads/'+i) }}" alt="">
+        <img class="image" src="{{ url_for('static', filename='uploads/'+i) }}" alt="{{i}}">
     </li>
     {% endfor %}
 </ul>
